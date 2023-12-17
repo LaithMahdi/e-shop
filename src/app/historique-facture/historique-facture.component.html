@@ -1,0 +1,20 @@
+<!-- historique-facture.component.html -->
+<div class="historique-facture">
+  <h2>Historique des Factures</h2>
+  <ul class="historique-list">
+    <!-- Utilisation de *ngFor sur l'élément li pour itérer sur l'historique -->
+    <li class="historique-item" *ngFor="let data of historique | async">
+      <p><strong>Date:</strong>{{ data.date_Facture }}</p>
+      <p><strong>Amount :</strong>{{ data.date_Facture }}</p>
+    
+      <p><strong>Prayer:</strong>{{ data.client.client_id}}</p>
+
+      <p><strong>Qte:</strong>{{ data.date_Facture }}</p>
+
+      <p><strong>Total:</strong> {{data.facture.qte}}</p>
+      <button>Voir la Facture</button>
+    </li>
+  </ul>
+  <div>
+  </div>
+</div>

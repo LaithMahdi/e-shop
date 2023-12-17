@@ -1,0 +1,85 @@
+/* header.component.css */
+header {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #34a853;
+}
+
+.user-link {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #4285f4;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.user:hover .user-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-menu li {
+  margin-bottom: 10px;
+}
+
+.user-menu a {
+  color: #ea4335;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.user-menu a:hover {
+  text-decoration: underline;
+  color: #fff;
+}

@@ -1,0 +1,22 @@
+<!-- header.component.html -->
+<header>
+    <nav>
+      <ul>
+        <li><a routerLink="/produits">Products</a></li>
+        <li><a routerLink="/panier">Shopping Cart</a></li>
+        <li><a routerLink="/facture">Ivoice</a></li>
+        <li><a routerLink="/historique-facture">History</a></li>
+        <li >
+
+          <div *ngIf="showUserMenu" class="user-menu">
+          <ul>
+            <li><a (click)="logout()">Logout</a></li>
+            <li><a routerLink="/parametres">Paramètres</a></li>
+          </ul>
+        </div>
+
+        </li>
+
+      </ul>
+    </nav>
+  </header>
